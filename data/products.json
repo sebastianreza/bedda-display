@@ -1,0 +1,198 @@
+{
+  "06_Weichkaese_Alternativen": [
+    {
+      "product_id": "609",
+      "product_name": "Rotbert 125g",
+      "file_path": "06_Weichkaese_Alternativen/609_bedda_Rotbert_125g.png"
+    },
+    {
+      "product_id": "230525",
+      "product_name": "Comeonbert",
+      "file_path": "06_Weichkaese_Alternativen/230525_bedda_Comeonbert.png"
+    }
+  ],
+  "02_Block": [
+    {
+      "product_name": "Block Folie British Style",
+      "file_path": "02_Block/bedda_Block_Folie_British_Style.png"
+    },
+    {
+      "product_name": "Block Folie Classic",
+      "file_path": "02_Block/bedda_Block_Folie_Classic.png"
+    }
+  ],
+  "07_Frischcremes": [
+    {
+      "product_id": "7047",
+      "product_name": "Frischcreme Paprika 150g",
+      "file_path": "07_Frischcremes/7047_bedda_Frischcreme_Paprika_150g.png"
+    },
+    {
+      "product_id": "7044",
+      "product_name": "Frischcreme Kraeuter 150g",
+      "file_path": "07_Frischcremes/7044_bedda_Frischcreme_Kraeuter_150g.png"
+    },
+    {
+      "product_id": "7042",
+      "product_name": "Frischcreme Natur 150g",
+      "file_path": "07_Frischcremes/7042_bedda_Frischcreme_Natur_150g.png"
+    }
+  ],
+  "05_Affinage": [
+    {
+      "product_id": "9308",
+      "product_name": "Affinage Bergkraeuter 140g",
+      "file_path": "05_Affinage/9308_bedda_Affinage_Bergkraeuter_140g.png"
+    },
+    {
+      "product_id": "9309",
+      "product_name": "Affinage Almbluete 140g",
+      "file_path": "05_Affinage/9309_bedda_Affinage_Almbluete_140g.png"
+    },
+    {
+      "product_id": "9310",
+      "product_name": "Affinage Orange-Pfeffer 140g",
+      "file_path": "05_Affinage/9310_bedda_Affinage_Orange-Pfeffer_140g.png"
+    }
+  ],
+  "04_Zum_Streuen": [
+    {
+      "product_id": "9918",
+      "product_name": "For Pizza 175g",
+      "file_path": "04_Zum_Streuen/9918_bedda_For_Pizza_175g.png"
+    },
+    {
+      "product_id": "221014",
+      "product_name": "Granvegano 150g ohne Schatten",
+      "file_path": "04_Zum_Streuen/221014_bedda_Granvegano_150g_ohne Schatten.png"
+    },
+    {
+      "product_id": "169",
+      "product_name": "Granvegano Keil 150g",
+      "file_path": "04_Zum_Streuen/169_bedda_Granvegano_Keil_150g.png"
+    }
+  ],
+  "09_Saucen_Dips_und_Dressings": [
+    {
+      "product_id": "9565",
+      "product_name": "Mayo 250g",
+      "file_path": "09_Saucen_Dips_und_Dressings/9565_bedda_Mayo_250g.png"
+    },
+    {
+      "product_id": "9526",
+      "product_name": "Trueffel-Mayo 250g",
+      "file_path": "09_Saucen_Dips_und_Dressings/9526_bedda_Trueffel-Mayo_250g.png"
+    },
+    {
+      "product_id": "8908",
+      "product_name": "Cheddar Style Sauce 250g",
+      "file_path": "09_Saucen_Dips_und_Dressings/8908_bedda_Cheddar_Style_Sauce_250g.png"
+    },
+    {
+      "product_id": "8520",
+      "product_name": "Hollandaise",
+      "file_path": "09_Saucen_Dips_und_Dressings/8520_bedda_Hollandaise.png"
+    },
+    {
+      "product_id": "9561",
+      "product_name": "Sylter Art 250ml",
+      "file_path": "09_Saucen_Dips_und_Dressings/9561_bedda_Sylter_Art_250ml.png"
+    },
+    {
+      "product_id": "9628",
+      "product_name": "Remo 250g",
+      "file_path": "09_Saucen_Dips_und_Dressings/9628_bedda_Remo_250g.png"
+    },
+    {
+      "product_id": "9629",
+      "product_name": "Aioli 250g",
+      "file_path": "09_Saucen_Dips_und_Dressings/9629_bedda_Aioli_250g.png"
+    }
+  ],
+  "10_Haferdrinks": [
+    {
+      "product_name": "Haferdrink Kaffee Front",
+      "file_path": "10_Haferdrinks/bedda_Haferdrink_Kaffee_Front.png"
+    },
+    {
+      "product_name": "Haferdrink Schoko Front",
+      "file_path": "10_Haferdrinks/bedda_Haferdrink_Schoko_Front.png"
+    }
+  ],
+  "03_Hirte": [
+    {
+      "product_id": "7605",
+      "product_name": "Hirte Softpack Kraeuter 150g",
+      "file_path": "03_Hirte/7605_bedda_Hirte_Softpack_Kraeuter_150g.png"
+    },
+    {
+      "product_id": "7602",
+      "product_name": "Hirte Softpack Natur 150g",
+      "file_path": "03_Hirte/7602_bedda_Hirte_Softpack_Natur_150g.png"
+    }
+  ],
+  "08_Frischetheke": [
+    {
+      "product_id": "8906",
+      "product_name": "wie Fleischsalat 150g Top",
+      "file_path": "08_Frischetheke/8906_bedda_wie_Fleischsalat_150g_Top.png"
+    },
+    {
+      "product_id": "8907",
+      "product_name": "wie Eiersalat 150g Top",
+      "file_path": "08_Frischetheke/8907_bedda_wie_Eiersalat_150g_Top.png"
+    },
+    {
+      "product_id": "685",
+      "product_name": "Mozzarella-Style Minis Top",
+      "file_path": "08_Frischetheke/685_bedda_Mozzarella-Style_Minis_Top.png"
+    }
+  ],
+  "01_Scheiben": [
+    {
+      "product_id": "9558",
+      "product_name": "Scheiben Bockshornklee 150g",
+      "file_path": "01_Scheiben/9558_bedda_Scheiben_Bockshornklee_150g.png"
+    },
+    {
+      "product_id": "9553",
+      "product_name": "Scheiben Zicke 150g",
+      "file_path": "01_Scheiben/9553_bedda_Scheiben_Zicke_150g.png"
+    },
+    {
+      "product_id": "9559",
+      "product_name": "Scheiben Pfeffer 150g",
+      "file_path": "01_Scheiben/9559_bedda_Scheiben_Pfeffer_150g.png"
+    },
+    {
+      "product_id": "9516",
+      "product_name": "Scheiben Rustikal 150g",
+      "file_path": "01_Scheiben/9516_bedda_Scheiben_Rustikal_150g.png"
+    },
+    {
+      "product_id": "9551",
+      "product_name": "Scheiben Zum-Schmelzen 180g",
+      "file_path": "01_Scheiben/9551_bedda_Scheiben_Zum-Schmelzen_180g.png"
+    },
+    {
+      "product_id": "9514",
+      "product_name": "Scheiben British Style 150g",
+      "file_path": "01_Scheiben/9514_bedda_Scheiben_British_Style_150g.png"
+    },
+    {
+      "product_id": "9511",
+      "product_name": "Scheiben Trueffel 150g",
+      "file_path": "01_Scheiben/9511_bedda_Scheiben_Trueffel_150g.png"
+    },
+    {
+      "product_id": "9515",
+      "product_name": "Scheiben Mediterran 150g",
+      "file_path": "01_Scheiben/9515_bedda_Scheiben_Mediterran_150g.png"
+    },
+    {
+      "product_id": "9513",
+      "product_name": "Scheiben Classic",
+      "file_path": "01_Scheiben/9513_bedda_Scheiben_Classic.png"
+    }
+  ]
+}

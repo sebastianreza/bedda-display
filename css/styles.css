@@ -1,0 +1,221 @@
+body {
+    overflow: auto;
+    max-height: 100%;
+    margin: 0;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vh;
+    margin: 0 0;
+}
+
+.background-container {
+    background-image: url("../img/background.jpg");
+    height: 1920px;
+    width: 1080px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: black 1px solid;
+    margin: 0 0;
+}
+
+.top-buttons {
+    margin: 0 auto;
+    width: 60vh;
+    text-align: center;
+    margin-top: 350px;
+
+}
+
+.top-button img {
+    max-height: 80px;
+}
+
+.top-button {
+    text-decoration: none;
+}
+
+.content-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content-title img {
+    max-height: 120px;
+}
+
+.recipes, .products {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.recipe, .product {
+    position: relative;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+/*
+.recipe span, .product span {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    border: 1px darkgreen solid;
+    background-color: darkgreen;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+*/
+.image-buttons {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+
+.recipe img, .product img {
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 200px;
+}
+
+.product img {
+    max-width: 250px;
+    border-radius: 0;
+    max-height: 400px;
+}
+
+.product img.btn-discover {
+    width: 200px;
+    max-height: 300px;
+    border-radius: 0;
+}
+
+
+.recipes-row {
+    height: 500px;
+}
+
+.products-row {
+}
+
+.btn-discover {
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
+    z-index: 100;
+}
+
+
+.more-inspiration {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row-reverse;
+    padding-right: 75px;
+}
+
+.more-inspiration img {
+    height: 80px;
+}
+
+.recipe.margin-left {
+    margin-left: 100px;
+}
+
+.home-button {
+    display: flex;
+    flex-direction: row;
+    padding-left: 125px;
+    padding-top: 20px;
+}
+
+.home-button img {
+    height: 80px;
+}
+
+.recipes.scrollable .recipes-row {
+    height: 400px;
+}
+
+.scrollable {
+    scroll-behavior: smooth;
+}
+
+.recipes.scrollable, .products.scrollable {
+    height: 950px;
+    overflow: hidden;
+}
+
+.scroll-buttons {
+    position: absolute;
+   /*   right: 35px;*/
+    top: 1000px;
+    margin-left: 420px;
+}
+
+.scroll-buttons .spacer {
+    padding-top:50px;
+}
+
+.scroll-buttons img {
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-category div {
+    color: #fff;
+    text-align: left;
+    padding-left: 90px;
+    font-size: 30px;
+}
+
+/*line under category for products */
+.category-title {
+    display: flex;
+    align-items: baseline;
+    padding-right: 140px;
+}
+
+.category-title::after {
+    content: "";
+    border-top: .3rem solid white;
+    flex: 1; /* Make the line expand to fill the remaining space */
+    
+}
+/* end for it */
+
+
+.product-category {
+    padding-top:50px;
+}
+
+.product-category:first-child {
+    padding-top:0;
+}
+
+.top-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.button-arrow {
+    background: none;
+    border: none;
+}
+.heading-with-line {
+    font-size: 4rem;
+    position: relative; /* Needed for positioning the line */
+}
+

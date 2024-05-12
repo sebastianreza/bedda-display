@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezept - Details</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid p-0 main-container">
+    <div class="container-fluid p-0 background-container">
+        <div class="recipe-header">
+            <div class="recipe-head-image"><img id="recipe-image" src="" alt="product_name"/></div>
+            <div>
+                <div id="product-name"></div>
+                <div><img id="qr-code-image" src="" alt="qr_code"/></div>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipe-ingredients" id="recipe-ingredients"></div>
+            <div class="recipe-instruction" id="recipe-instructions"></div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    // Example JSON Data
+    const recipes = [
+        {
+            "id": "1",
+            "Bild": "recipes/comeonbert-burger.jpg",
+            "Name": "Come on Bert Burger",
+            "QR-Code": "Rezept_Come_on_Bert_Burger.png",
+            "Zutaten": "Zutaten (für 4 Personen):\r\n\r\n3 St.\tbedda Come on Bert\r\n\tbedda Mayo\r\n125 g \tMehl\r\n75 g \tSemmelbrösel\r\n150 ml \tPflanzenmilch\r\n1 TL \tKnoblauchpulver\r\n1 TL\t\tZwiebelpulver\r\n1\/2 TL \tPaprikapulver\r\n4 St.\tBurgerbrötchen\r\n\tSalz, Pfeffer\r\n\tÖl zum Braten\r\n\tFeldsalat\r\n\tPreiselbeermarmelade",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. 75 g Mehl in eine Schüssel geben.\r\nIn einer zweiten Schüssel 50 g Mehl, 125 ml Pflanzenmilch, Knoblauchpulver, Zwiebelpulver, Paprika, Salz und Pfeffer verquirlen.\r\nIn eine dritte Schüssel die Semmelbrösel geben.\r\n\r\n2. Vier Gabeln vorbereiten. Zwei für die feuchten und zwei für die trockenen Zutaten verwenden. Darauf achten, dass nicht in die Bert-Stücke gestochen wird, sondern diese nur mit den Gabeln aufgehoben werden.\r\n\r\n3. Die bedda Come on Bert-Stücke in Mehl wälzen, dann in die Milch-Mehl-Mischung tauchen und dann in die Semmelbrösel. Die letzten beiden Schritte wiederholen, um eine dickere Panade zu erhalten.\r\n\r\n4. Öl in einem Topf erhitzen. Die Come on Bert-Stücke in das erhitzte Öl geben und auf beiden Seiten 3-5 Minuten bis sie goldbraun sind braten. Auf einen mit Papiertüchern ausgelegten Teller geben.\r\n\r\n5. Zum Belegen der Burger die Brötchen mit bedda Mayo und Preiselbeermarmelade bestreichen. Mit dem Salat und den gebratenen bedda Come on Bert-Stücken belegen.",
+            "Startseite": false
+        },
+        {
+            "id": "2",
+            "Bild": "recipes/mediterranean_sandwich.jpg",
+            "Name": "Mediterranes Sandwich mit Falafel",
+            "QR-Code": "Rezept_Mediterranes_Sandwich.png",
+            "Zutaten": "Zutaten (für 3 Personen):\r\n\r\n1 kleine Zucchini\r\n1 kleine rote Paprika\r\nFalafelbällchen\r\n3 EL bedda Frischcreme Natur\r\n3 EL Hummus\r\n1 TL Zitronensaft\r\n1 Ciabattabrot\r\n4 bedda Scheiben Mediterran\r\nOlivenöl\r\nSalz, Pfeff",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Zucchini der Länge nach in Scheiben schneiden, Paprika in 4-6 Stücke schneiden. Mit Olivenöl bepinseln und großzügig mit Salz und Pfeffer bestreuen. In einer Pfanne oder auf dem Grill zusammen mit den Falafelbällchen anbraten.\r\n\r\n2. BEDDA Frischcreme mit Hummus und Zitronensaft verrühren.\r\n\r\n3. Ciabattabrot in der Mitte durchschneiden und beide Seiten mit der Frischcreme-Hummus-Mischung bestreichen. Mit gegrilltem Gemüse, Falafel und BEDDA Scheiben Mediterran belegen.",
+            "Startseite": false
+        },
+        {
+            "id": "3",
+            "Bild": "recipes/",
+            "Name": "Aglio e Olio",
+            "QR-Code": "Rezept_Aglio_e_Olio.png",
+            "Zutaten": "Zutaten (für 2 Personen):\r\n\r\n200 g Spaghetti\r\n50 ml Olivenöl\r\n2 EL vegane Butter\r\n2-4 Knoblauchzehen, gehackt\r\n1 Chili, fein gehackt\r\n1 kleines Bündel Petersilie, gehackt\r\n50 g bedda Granvegano Keil, gerieben + mehr zum Servieren\r\nSalz, Pfeffer",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Nudeln nach Packungsanweisung kochen. Einen Teil des Kochwassers auffangen und beiseite stellen und dann das Wasser abgießen.\r\n\r\n2. Olivenöl, Butter, Knoblauch und Chili in eine große Pfanne geben. Bei mittlerer Hitze unter gelegentlichem Rühren etwa 10 Minuten kochen, bis der Knoblauch duftet und leicht braun ist.\r\n\r\n3. Nudeln, Petersilie, Granvegano Keil und eine große Prise Salz und Pfeffer hinzufügen und verrühren. Bei Bedarf noch etwas Nudelwasser hinzufügen. Sofort servieren und mit etwas mehr Granvegano Keil bestreuen.",
+            "Startseite": true
+        },
+        {
+            "id": "4",
+            "Bild": "recipes/",
+            "Name": "Come on Bert Salat",
+            "QR-Code": "Rezept_CoB_Salat.png",
+            "Zutaten": "Zutaten (für 2-4 Personen):\r\n\r\n200 g grüner Spargel\r\n1 TL Olivenöl\r\n75 g Rucola\r\n1 Kopf Baby-Romanasalat, zerrissen\r\n1 kleiner Apfel, in Scheiben geschnitten\r\n100 g Himbeeren\r\n2 EL frischer Dill\r\n125 g bedda Come on Bert, in Keile geschnitten\r\n25 g Walnüsse, geröstet\r\n\r\nDressing:\r\n1 Zitrone, saftig\r\n2 EL Olivenöl\r\n1 TL Dijon-Senf\r\n1 TL frische oder gefrorene gemischte Kräuter\r\nSalz, Pfeffer",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Olivenöl in einer großen Pfanne erhitzen. Spargel hinzufügen und 3-4 Minuten grillen, bis er weich wird, aber noch knackig ist. Aus der Pfanne nehmen und größere Stücke der Länge nach halbieren. Abkühlen lassen, bis der Rest des Salats zubereitet ist.\r\n\r\n2. Für das Dressing Zitronensaft, Olivenöl, Senf und Kräuter verrühren. Mit Salz und Pfeffer abschmecken.\r\n\r\n3. Rucola, Römersalat, Apfelscheiben, Himbeeren, Spargel und Salatdressing in eine Schüssel geben und durchmischen. Mit bedda Come on Bert und Walnüssen garnieren.",
+            "Startseite": true
+        },
+        {
+            "id": "5",
+            "Bild": "recipes/",
+            "Name": "Hasselback Kartoffeln",
+            "QR-Code": "Rezept_Hasselback_Kartoffeln.png",
+            "Zutaten": "Zutaten (für 4 Personen):\r\n\r\n1 kg mittelgroße mehlige Kartoffeln\r\n2 EL Olivenöl\r\n2 Knoblauchzehen, gehackt\r\n1\/2 TL Chiliflocken (optional)\r\n1 TL frische Thymian\r\n6 Scheiben bedda Scheiben Classic, in kleinere Quadrate geschnitten\r\nSalz, Pfeffer",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Schneiden Sie Schlitze in die Kartoffeln und hören Sie kurz vor dem Durchschneiden auf, damit der Boden intakt bleibt. Gegebenenfalls zwei Stäbchen zur Führung des Messers verwenden.\r\n\r\n2. Öl, Knoblauch, Chiliflocken und Thymian mischen. Die Kartoffeln auf ein vorbereitetes Backblech legen und mit der Hälfte des Öls bepinseln, wobei darauf zu achten ist, dass es auch in die Schlitze gelangt. Großzügig mit Salz und Pfeffer bestreuen.\r\n\r\n3. Die Kartoffeln 30 Minuten bei 200°C backen, dann die bedda-Scheiben zwischen die Kartoffelschlitze schieben. Mit dem restlichen Öl bepinseln. Weitere 20-30 Minuten backen, oder bis die Kartoffeln goldbraun sind.",
+            "Startseite": false
+        },
+        {
+            "id": "6",
+            "Bild": "recipes/",
+            "Name": "Omelette Muffins",
+            "QR-Code": "Rezept_Omelette_Muffins.png",
+            "Zutaten": "Zutaten (für 16 Muffins):\r\n\r\n100 g Kichererbsenmehl\r\n75 g Mehl\r\n25 g Hefeflocken\r\n1,5 TL Knoblauchpulver\r\n1\/2 TL Backpulver\r\n85 g bedda Hollandaise + mehr zum Anrichten\r\n200 ml Wasser oder ungesüßte Pflanzenmilch\r\n100 g Zucchini, gewürfelt\r\n100 g Jalapeno, entkernt und gewürfelt\r\n180 g Mais\r\n2 Tomaten, gewürfelt\r\n85 g bedda Vegarella oder For Pizza\r\nSalz, Pfeffer",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Den Backofen auf 180°C vorheizen.\r\n\r\n2. In einer großen Schüssel beide Mehle, Hefeflocken, Knoblauch, Backpulver und eine große Prise Salz und Pfeffer vermischen.\r\n\r\n3. In einer separaten Schüssel die bedda Hollandaise mit Wasser oder Milch verrühren. Die Hollandaise Mischung zu der trockenen Mischung geben und verrühren.\r\n\r\n4. Gemüse und bedda For Pizza unterheben.\r\n\r\n5. Den Teig auf 16 mit Silikon oder Papier ausgelegten Muffinförmchen verteilen.\r\n\r\n6. 30-40 Minuten backen, bis die Oberfläche goldgelb ist. Mit einem Zahnstocher prüfen, ob die Muffins fest geworden sind.\r\n7. Die Muffins mindestens 15 Minuten in der Muffinform abkühlen, danach herausnehmen. Die Muffins warm servieren oder bei Zimmertemperatur mit einer Extraportion Hollandaise toppen.",
+            "Startseite": false
+        },
+        {
+            "id": "7",
+            "Bild": "recipes/",
+            "Name": "Trüffel-Burger",
+            "QR-Code": "Rezept_Truffel_Burger.png",
+            "Zutaten": "Zutaten (pro Burger):\r\n\r\n1 EL Öl\r\n1 große Zwiebel, in dünne Scheiben geschnitten\r\n1 veganer Burger-Patty\r\n2 Scheiben bedda Scheiben Trüffel Style\r\n30 g geschredderter Rotkohl\r\n1 TL Ahornsirup\r\n1 TL Apfelessig\r\n1 Burgerbrötchen\r\n2 EL bedda Mayo\r\n1 EL Ketchup\r\neine Handvoll gemischter Salat\r\n1 Birne, in dünne Scheiben geschnitten",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Öl in einer großen Pfanne erhitzen. Die Zwiebelscheiben hinzugeben und auf niedriger Stufe etwa 30 Minuten unter gelegentlichem Rühren anbraten, bis die Zwiebeln weich und karamellisiert sind. Beiseite stellen.\r\n\r\n2. Burger-Patty in die Pfanne geben und 2-3 Minuten braten bis eine Seite gar ist. Wenden und mit bedda Scheiben Trüffel Style belegen. Mit einem Deckel abdecken und garen, bis das Patty durchgebraten ist und der Käse zu schmelzen beginnt.\r\n\r\n3. Kohl, Ahornsirup und Apfelessig vermischen.\r\n\r\n4. Brötchen mit bedda Mayo und Ketchup bestreichen. Mit Salat, karamellisierten Zwiebeln, Burger-Patty, Kohl und Birnenscheiben belegen.",
+            "Startseite": true
+        },
+        {
+            "id": "8",
+            "Bild": "recipes/",
+            "Name": "Taquitos",
+            "QR-Code": "Rezept_Taquitos.png",
+            "Zutaten": "Zutaten (für 12 Taquitos):\r\n\r\n1 Dose Kidneybohnen, abgetropft\r\n150 g bedda Vegarella oder beddaFor Pizza\r\n1\/2 grüne Paprika, gehackt\r\n1\/2 gelbe Paprika, gehackt\r\n1 kleine Zwiebel, gehackt\r\n3 EL Tomatenmark oder Tomatensalsa\r\n1-3 EL bedda Mayo\r\n2 TL Knoblauchpulver\r\n1 TL Zwiebelpulver\r\n1 TL geräuchertes Paprikapulver\r\n1 TL Chilipulver\r\n1\/2 TL Kreuzkümmel\r\n12 Tortillas\r\nÖl zum Braten\r\nSalz, Pfeffer",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Abgetropfte Kidneybohnen in eine Schüssel geben. Mit einer Gabel zu einer Masse zerdrücken.\r\n\r\n2. bedda For Pizza, gehackte Paprika und Zwiebel, Tomatenmark, 1 Esslöffel bedda Mayo und Gewürze hinzufügen und gut vermengen. Wenn die Mischung zu trocken ist, einfach etwas mehr bedda Mayo unterrühren.\r\n\r\n3. Etwa 2 Esslöffel der Mischung in einem Streifen an einem Ende eines Tortilla verteilen und diesen dann fest aufrollen.\r\n\r\n4. Den Vorgang mit den restlichen Tortillas und der Füllung wiederholen. Taquitos mit der Naht nach unten legen (oder mit einem Zahnstocher fixieren).\r\n\r\n5. Öl in einer Bratpfanne erhitzen. Sobald es heiß ist, die Taquitos nach und nach hineinlegen. Unter ständigem Wenden auf jeder Seite ein paar Sekunden frittieren, bis sie knusprig sind.\r\n\r\n6. Alternativ können die Taquitos auch gebacken werden. Dazu die Taquitos nach dem Rollen einfach mit etwas Öl bepinseln und mit der Naht nach unten auf ein Backblech legen (oder mit einem Zahnstocher fixieren). Bei 180°C etwa 15 Minuten backen, bis sie knusprig sind.",
+            "Startseite": false
+        },
+        {
+            "id": "9",
+            "Bild": "recipes/",
+            "Name": "Tomaten Galette",
+            "QR-Code": "Rezept_Tomaten_Galette.png",
+            "Zutaten": "Zutaten:\r\n\r\n400 g Vollkornpizzateig\r\n75 g bedda Hirte + etwas mehr zum Anrichten\r\n50 g bedda For Pizza\r\n75 g bedda Frischcreme Natur\r\n20 g bedda Granvegano\r\n350 g Tomaten und Kirschtomaten, in Scheiben geschnitten\r\n3 Knoblauchzehen, gehackt\r\n2 EL Olivenöl\r\n2 EL Tahini\r\n1 EL frisches Bohnenkraut, gehackt\r\n3-4 EL ungesüßte Pflanzenmilch\r\n1 TL Sesamsamen\r\n1 TL Mohnsamen\r\n2 TL Agavensirup\r\nGewürze Salz, Pfeffer",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Ofen auf 200 °C vorheizen.\r\n\r\n2. bedda Frischcreme Natur, Tahini, zerbröselter bedda Hirte, bedda For Pizza, bedda Granvegano, 1 EL Olivenöl, Knoblauch und Bohnenkraut zu einer Sauce vermischen. Mit Salz und Pfeffer abschmecken.\r\n\r\n3. Den Pizzateig in einen Kreis von ca. 35 cm Durchmesser ausrollen. Die Sauce auf dem Teig verteilen, dabei etwa 3 cm für den Rand auslassen.\r\n\r\n4. Die Sauce mit Tomatenscheiben bedecken und den Teig an den Ecken über die Tomaten falten. Den Rand mit Pflanzenmilch bestreichen und mit Sesam- und Mohnsamen bestreuen.\r\n\r\n5. Für 4550 Minuten backen, bis der Teig goldbraun ist.\r\n\r\n6. Vor dem Schneiden etwas abkühlen lassen. Mit Olivenöl und Agavensirup beträufeln und mit etwas mehr bedda Hirte toppen.",
+            "Startseite": true
+        },
+        {
+            "id": "10",
+            "Bild": "recipes/",
+            "Name": "Kumpir",
+            "QR-Code": "Rezept_Kumpir.png",
+            "Zutaten": "Zutaten (pro Kartoffel):\r\n\r\nOlivenöl\r\n1 bedda Frischcreme Paprika\r\n1 bedda Vegarella\r\nGewürze Salz, Pfeffer\r\n\r\nToppings nach Lust und Laune, z.B.:\r\nbedda Hollandaise\r\nbedda Cheddar Style Sauce\r\nGurke\r\nTomate\r\nMais\r\nKidneybohnen\r\nCouscoussalat\r\nSojajoghurt mit Knoblauch\r\nbedda Hirte\r\nRotkohl\r\nOliven\r\nSauerkraut\r\nPeperoni\r\ngrüne Salate\r\nfrische Kräuter",
+            "Zubereitung": "Zubereitung:\r\n\r\n1. Die Kartoffeln mit einer Bürste schrubben und danach mit einer Gabel einstechen. Jede Kartoffel mit einem Teelöffel Olivenöl, etwas Salz und Pfeffer einreiben. In Aluminiumfolie einwickeln und auf ein Backblech legen. Bei 220 °C für 6090 Minuten backen, je nach Größe der Kartoffeln.\r\n\r\n2. Die Kartoffeln halbieren und je ein Esslöffel bedda Frischcreme Paprika und ein Esslöffel bedda Vegarella dazugeben. Die Innenseite der Kartoffeln leicht mit einer Gabel zerstampfen, sodass der Käse etwas schmilzt.\r\n\r\n3. Die Kumpir umgehend mit deinen Lieblingstoppings servieren.",
+            "Startseite": false
+        }
+    ];
+
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    function displayRecipe() {
+        const recipeId = getParameterByName('recipe');
+        const recipe = recipes.find(r => r.id === recipeId);
+
+        if (recipe) {
+            document.getElementById('recipe-image').src = "img/" + recipe.Bild;
+            document.getElementById('recipe-image').alt = recipe.Name;
+            document.getElementById('product-name').textContent = recipe.Name;
+            document.getElementById('qr-code-image').src = "img/" + recipe['QR-Code'];
+            document.getElementById('qr-code-image').alt = "QR Code for " + recipe.Name;
+            document.getElementById('recipe-ingredients').innerHTML = recipe.Zutaten.replace(/\\r\\n/g, '<br>').replace(/\\t/g, '');
+            document.getElementById('recipe-instructions').innerHTML = recipe.Zubereitung.replace(/\\r\\n/g, '<br>').replace(/\\t/g, '');
+        } else {
+            document.getElementById('product-name').textContent = "Recipe not found.";
+        }
+    }
+
+    // Call displayRecipe on page load
+    window.onload = displayRecipe;
+    <img src="img/recipes/comeonbert-burger.jpg" height="1080" width="1080"/></script>
+</body>
+</html>

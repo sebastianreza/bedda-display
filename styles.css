@@ -1,3 +1,17 @@
+@font-face {
+  font-family: beddaLondon;
+  src: url(fonts/Chalet-LondonNineteenSixty.otf);
+}
+
+@font-face {
+  font-family: beddaNY;
+  src: url(fonts/Chalet-NewYorkNineteenSixty.otf);
+}
+
+div {
+  font-family: myFirstFont;
+}
+
 body {
     overflow: auto;
     max-height: 100%;
@@ -251,3 +265,8 @@ body {
     transform: translateY(5px);
 }
 /** Arrows end **/
+
+
+.product-category-title {
+	color: white;
+}

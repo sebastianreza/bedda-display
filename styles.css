@@ -153,7 +153,6 @@ body {
 }
 
 .recipes.scrollable, .products.scrollable {
-    height: 950px;
     overflow: hidden;
 }
 

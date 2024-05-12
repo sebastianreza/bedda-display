@@ -11,7 +11,7 @@ body {
 }
 
 .background-container {
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.webp");
     height: 1920px;
     width: 1080px;
     background-size: cover;

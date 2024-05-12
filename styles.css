@@ -121,6 +121,10 @@ body {
     height: 500px;
 }
 
+.recipes-row, .recipe-details {
+    height: 350px;
+}
+
 .products-row {
 }
 
@@ -271,3 +275,26 @@ body {
 	color: white;
 	font-family: beddaNY;
 }
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.title {
+    text-align: left;
+    font-weight: 600;
+}
+
+.details {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.bigtitle {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+

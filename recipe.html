@@ -33,29 +33,29 @@
         <!-- Recipes -->
         <div class="recipes container mt-0 scrollable">
           <div class="container-fluid recipes-row">
-            <a class="recipe" href="test.html">
+            <a class="recipe" href="hasselback-potato.html">
                 <img src="img/recipes/hasselback-potato.jpg"/>
                 <img class="image-buttons" src="img/buttons-label/btn_hasselback_kartoffeln.png"/>
             </a>
-            <a class="recipe margin-left" href="test.html">
+            <a class="recipe margin-left" href="comeonbert-burger.html">
                 <img src="img/recipes/comeonbert-burger.jpg"/>
                 <img class="image-buttons" src="img/buttons-label/btn_come_on_bert_burger.png"/>
             </a>
         </div>
 
         <div class="container-fluid recipes-row">
-            <a class="recipe" href="index.html">
+            <a class="recipe" href="aglioeolio.html">
                 <img src="img/recipes/aglioeolio.jpg"/>
                 <img class="image-buttons" src="img/buttons-label/btn_aglio.png"/>
             </a>
-            <a class="recipe margin-left" href="index.html">
+            <a class="recipe margin-left" href="tomato-galette.html">
                 <img src="img/recipes/tomato-galette.jpg"/>
                 <img class="image-buttons" src="img/buttons-label/btn_tomaten_galette.png"/>
             </a>
         </div>
 
         <div class="container-fluid recipes-row">
-            <a class="recipe" href="index.html">
+            <a class="recipe" href="truffle-burger.html">
                 <img src="img/recipes/truffle-burger.jpg"/>
                 <img class="image-buttons" src="img/buttons-label/btn_trueffel_burger.png"/>
             </a>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="container-fluid recipes-row">
-            <a class="recipe" href="index.html">
+            <a class="recipe" href="camembert-salad.html">
                 <img src="img/recipes/camembert-salad.jpg"/>
                 <img class="image-buttons" src="img/buttons-label/btn_camon_bert_salat.png"/>
             </a>
@@ -76,21 +76,21 @@
             </a>
         </div>
         <div class="container-fluid recipes-row">
-            <a class="recipe" href="index.html">
+            <a class="recipe" href="taquitos.html">
                 <img src="img/recipes/taquitos_02.jpg"/>
                 <img class="image-buttons" src="img/buttons-label/btn_taquitos.png"/>
             </a>
-            <a class="recipe margin-left" href="index.html">
+            <a class="recipe margin-left" href="kumpir.html">
                 <img src="img/recipes/kumpir.jpg"/>
                 <img class="image-buttons" src="img/buttons-label/btn_kumpir.png"/>
             </a>
         </div>
             <!-- Buttons to move text -->
             <div class="scroll-buttons btn-group-vertical">
-                <button type="button" class="btn btn-primary mb-2 button-arrow" onclick="moveText('up')">
+                <button type="button" class="btn btn-primary mb-2 button-arrow  button-up" onclick="moveText('up')">
                     <img src="img/buttons/btn_arrow_up.png">
                 </button>
-                <button type="button" class="btn btn-primary button-arrow" onclick="moveText('down')">
+                <button type="button" class="btn btn-primary button-arrow  button-down" onclick="moveText('down')">
                     <img src="img/buttons/btn_arrow_down.png">
                 </button>
             </div>
@@ -108,8 +108,28 @@
     </div>
 
 </div>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+
+<script>
+    function moveText(direction) {
+  var container = document.querySelector('.recipes, .products');
+  var containerHeight = container.clientHeight;
+  var contentHeight = container.scrollHeight;
+  var step = 355;
+
+  if (direction === 'down') {
+      // Calculate the maximum allowable scroll position to stop scrolling down
+      var maxScrollTop = contentHeight - containerHeight;
+      var newScrollTop = container.scrollTop + step;
+      // Ensure that the new scroll position does not exceed the maximum
+      container.scrollTop = Math.min(newScrollTop, maxScrollTop);
+  } else if (direction === 'up') {
+      var newScrollTop = container.scrollTop - step;
+      // Ensure that the new scroll position does not go below 0
+      container.scrollTop = Math.max(newScrollTop, 0);
+  }
+}
+
+</script>
 
 </body>
 </html>

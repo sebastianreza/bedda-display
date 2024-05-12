@@ -87,6 +87,7 @@ body {
     width: 300px;
     margin-top: 20px;
     border-radius: 200px;
+    padding: 15px;
 }
 
 .product img {
@@ -219,3 +220,35 @@ body {
     position: relative; /* Needed for positioning the line */
 }
 
+.btn {
+    background-color: transparent !important;
+}
+
+/** Arrows */
+.recipes {
+    max-height: 1000px; /* Set maximum height for the scrollable content */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.button-up {
+    margin-bottom: 10pxt;
+}
+
+.button-down {
+    margin-top: 10px !important;
+}
+
+.button-up:hover {
+    transform: translateY(-5px);
+}
+
+.button-down:hover {
+    transform: translateY(5px);
+}
+/** Arrows end **/

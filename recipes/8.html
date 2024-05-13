@@ -43,9 +43,16 @@
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <h1 class="recipe margin-left title bigtitle detailing">
-                                Taquitos
-                            </h1>
+                             <div class="recipe-title-and-qr">
+                                <h1 class="recipe title bigtitle detailing recepie-title-new">
+                                     Taquitos
+                                </h1>
+                            
+                                <div class="qr-div">
+                                    <img src="../img/QR_Codes/Rezept_Taquitos.png" class="sizing-qr"/>
+                                    <img src="../img/QR_Codes/Stoerer_zum_Rezept.png" class="sizing-zum-recept"/>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-2"></div>
                     </div>
@@ -109,8 +116,8 @@
 
             </div>
             <div class="button-box col-lg-12 home">
-                <a class="container-fluid home-button  home-button-description" href="../products.html">
-                    <img src="../img/buttons/btn_discover_white.png">
+                <a class="container-fluid home-button  home-button-description" href="../recipe.html">
+                    <img src="../img/buttons/btn_back.png">
                 </a>
                 <a class="container-fluid home-button home-button-description" href="../home.html">
                     <img src="../img/buttons/btn_home.png">
@@ -129,7 +136,11 @@
 
     </div>
 
-
+<script>
+        window.setTimeout(function () {
+                location.href = "../index.html";
+      },60000);
+</script>
 </body>
 
 </html>

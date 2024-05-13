@@ -96,15 +96,20 @@ body {
 }
 
 
-.recipe img, .product img {
+.recipe img{
     width: 300px;
     margin-top: 20px;
     border-radius: 200px;
     padding: 15px;
 }
+.product img{
+    width: AUTO;
+    height: AUTO;
+}
+
 
 .product img {
-    max-width: 250px;
+    max-width: 500px;
     border-radius: 0;
     max-height: 400px;
 }
@@ -277,6 +282,7 @@ body {
 .product-category-title {
 	color: white;
 	font-family: beddaNY;
+    font-size: 3.5rem;
 }
 
 
@@ -308,6 +314,37 @@ ul {
     margin-bottom: 125px;
 }
 
+.recepie-title-new{
+    margin-bottom: 0;
+    padding-bottom: 5%;
+    margin: 0;
+    padding: 0;
+}
+
+.sizing-qr{
+    width: 130px;
+}
+.recipe-title-and-qr{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: flex-start;
+    padding-top: 10%;
+    padding-right: 0%;
+    padding-left: 30%;
+}
+
+.qr-div{
+    display: flex;
+    gap: 1svh;
+}
+
+.sizing-zum-recept{
+    align-self: center;
+    justify-content: center;
+    width: 150px;
+
+}
 .text-padding {
     padding-top: 70px
 }
@@ -318,6 +355,8 @@ ul {
 
     margin-right: -233px;
 }
+
+
 
 .changes-product {
     width: 550px !important;

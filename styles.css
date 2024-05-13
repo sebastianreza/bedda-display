@@ -381,3 +381,37 @@ td {
     flex-direction: column;
 }
 
+    .main-container-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto auto; 
+        grid-gap: 20px;
+        align-self: center;
+    }
+
+    .main-container-2 > div {
+        padding: 20px;
+        height: auto;
+    }
+
+    .first-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nutrition-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .nutrition-table td {
+        padding: 8px 0;
+    }
+
+    .nutrition-table td:first-child {
+        text-align: left;
+    }
+
+    .nutrition-table td:last-child {
+        text-align: right;
+    }

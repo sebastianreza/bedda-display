@@ -247,6 +247,7 @@ body {
 .recipes {
     max-height: 1000px; /* Set maximum height for the scrollable content */
     overflow-y: auto; /* Enable vertical scrolling */
+    overflow: hidden;
 }
 
 .button {

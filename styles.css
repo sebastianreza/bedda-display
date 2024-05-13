@@ -309,3 +309,35 @@ ul {
     margin-top: -125px;
     margin-bottom: 125px;
 }
+
+.recepie-title-new{
+    margin-bottom: 0;
+    padding-bottom: 5%;
+    margin: 0;
+    padding: 0;
+}
+
+.sizing-qr{
+    width: 130px;
+}
+.recipe-title-and-qr{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: flex-start;
+    padding-top: 10%;
+    padding-right: 0%;
+    padding-left: 30%;
+}
+
+.qr-div{
+    display: flex;
+    gap: 1svh;
+}
+
+.sizing-zum-recept{
+    align-self: center;
+    justify-content: center;
+    width: 150px;
+
+}

@@ -43,11 +43,19 @@
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <h1 class="recipe margin-left title bigtitle detailing">
-                                Come on Bert Burger
-                            </h1>
+                            <div class="recipe-title-and-qr">
+                                <h1 class="recipe title bigtitle detailing recepie-title-new">
+                                    Come on Bert Burger
+                                </h1>
+                            
+                                <div class="qr-div">
+                                    <img src="../img/QR_Codes/Rezept_Come_on_Bert_Burger.png" class="sizing-qr"/>
+                                    <img src="../img/QR_Codes/Stoerer_zum_Rezept.png" class="sizing-zum-recept"/>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                        </div>
                     </div>
                 </div>
 
@@ -57,7 +65,8 @@
                     <div class="container container_details">
                         <div class="row">
                             <div class="row">
-                                <div class="col-md-2"></div>
+                                <div class="col-md-2">
+                                </div>
                                 <div class="col-md-4">
                                     <h4 class="title detailing">Zutaten (für 4 Personen):</h4>
                                     <ul class="details detailing">
@@ -117,7 +126,7 @@
             </div>
             <div class="button-box col-lg-12 home">
                 <a class="container-fluid home-button  home-button-description" href="../products.html">
-                    <img src="../img/buttons/btn_discover_white.png">
+                    <img src="../img/buttons/btn_back.png">
                 </a>
                 <a class="container-fluid home-button home-button-description" href="../home.html">
                     <img src="../img/buttons/btn_home.png">
@@ -154,7 +163,9 @@
           container.scrollTop = Math.max(newScrollTop, 0);
       }
     }
-    
+    window.setTimeout(function () {
+                location.href = "../index.html";
+      },60000);
     </script>
 
 </body>

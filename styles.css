@@ -361,3 +361,9 @@ ul {
     padding: -233px !important;
     margin-left: 109px !important;
 }
+
+.alighnment-image{
+    display: flex;
+    flex-direction: column;
+}
+

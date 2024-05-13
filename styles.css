@@ -154,6 +154,16 @@ body {
     height: 80px;
 }
 
+.home-button-description {
+    display: inline;
+    padding-left: 0px;
+}
+
+.home {
+    padding-left: 160px;
+    padding-top: 80px;
+}
+
 .recipes.scrollable .recipes-row {
     height: 400px;
 }
